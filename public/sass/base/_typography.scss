@@ -1,0 +1,188 @@
+p {
+    line-height: 140%;
+    font: $font-primary;
+    color: $color-black;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-primary, sans-serif;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .text-white{
+    color: $color-white;
+  }
+
+  .text-primary{
+    color: $color-primary;
+
+    &-medium{
+      color: $color-primary-medium;
+    }
+
+    &-dark{
+      color: $color-primary-dark;
+    }
+  }
+
+  .text-grey-scale{
+    color: $color-grey-scale;
+
+    &-regular{
+      color: $color-grey-scale;
+    }
+
+    &-medium{
+      color: $color-grey-scale-medium;
+    }
+
+    &-dark{
+      color: $color-grey-scale-dark;
+    }
+  }
+
+  .text-xxxl{
+    font-size: $xxxl-text-desktop;
+    font-weight: 500;
+    
+    @include respond(tab-port) {
+      font-size: $xxxl-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $xxxl-text-mobile;
+    }
+  }
+
+  .text-xxl{
+    font-size: $xxl-text-desktop;
+    font-weight: 500;
+    
+    @include respond(tab-port) {
+      font-size: $xxl-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $xxl-text-mobile;
+    }
+  }
+  
+  .text-xl{
+    font-size: $xl-text-desktop;
+
+    @include respond(tab-port) {
+      font-size: $xl-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $xl-text-mobile;
+    }
+  }
+  
+  .text-large{
+    font-size: $large-text-desktop;
+    
+    @include respond(tab-port) {
+      font-size: $large-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $large-text-mobile;
+    }
+  }
+  
+  .text-medium{
+    font-size: $medium-text-desktop;
+    
+    @include respond(tab-port) {
+      font-size: $medium-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $medium-text-mobile;
+    }
+  }
+  
+  .text-regular{
+    font-size: $regular-text-desktop;
+    font-weight: 400;
+    
+    @include respond(tab-port) {
+      font-size: $regular-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $regular-text-mobile;
+    }
+  }
+  
+  .text-small{
+    font-size: $small-text-desktop;
+    
+    @include respond(tab-port) {
+      font-size: $small-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $small-text-mobile;
+    }
+  }
+  
+  .text-caption {
+    font-size: $small-text-desktop;
+    font-weight: 400;
+    
+    
+    @include respond(tab-port) {
+      font-size: $small-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $small-text-mobile;
+    }
+  }
+  
+  .text-quote{
+    font-size: $medium-text-desktop;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+
+    @include respond(tab-port) {
+      font-size: $medium-text-tablet;
+    }
+    
+    @include respond(phone) {
+      font-size: $medium-text-mobile;
+    }
+  }
+
+  .text-weight{
+    &-300{
+      font-weight: 300;
+    }
+    &-400{
+      font-weight: 400;
+    }
+    &-500{
+      font-weight: 500;
+    }
+    &-600{
+      font-weight: 600;
+    }
+  }

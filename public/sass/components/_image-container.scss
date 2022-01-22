@@ -1,0 +1,16 @@
+.image-container{
+        // border: 2px dashed purple;
+        
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        
+        
+        & img {
+            height: inherit;
+            max-width: 120%;
+        }
+}

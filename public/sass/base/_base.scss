@@ -1,0 +1,90 @@
+// *,
+// *::after,
+// *::before {
+//   margin: 0;
+//   padding: 0;
+// box-sizing: inherit;
+
+// }
+* {
+  box-sizing: border-box;
+  // border: 0.10px solid rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // this defines what 1 rem is
+  font-size: 62.5%; //1rem = 10px    10px/16px = 62.5%
+  // width: 100vw;
+
+}
+
+body {
+  font-family: $font-primary;
+  background-color: white;
+  font-weight: 300;
+  line-height: 1;
+  overflow-x: hidden;
+  // box-sizing: inherit;
+  
+} 
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+cite{
+  font-style:normal;
+}
+
+.preload-transitions * {
+  // Dry this up a bit with SCSS variable
+  $null-transition: none !important;
+
+  -webkit-transition: $null-transition;
+  -moz-transition: $null-transition;
+  -ms-transition: $null-transition;
+  -o-transition: $null-transition;
+  transition: $null-transition;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

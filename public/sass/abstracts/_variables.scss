@@ -1,0 +1,72 @@
+
+// COLOR VARIABLES
+$color-primary-light: #74c0ff;
+$color-primary: #038AFC;
+$color-primary-medium: #0060B0;
+$color-primary-dark: #004784;
+
+$color-secondary-light: #ffdd81;
+$color-secondary: #ffb900;
+$color-secondary-medium: #ff7730;
+$color-secondary-dark: #f95c41;
+
+$color-tertiary-light: #dcf8a8;
+$color-tertiary: #b5dd6b;
+$color-tertiary-medium: #6e9e13;
+$color-tertiary-dark: #416400;
+
+$color-grey-scale-light: rgb(225, 225, 225);
+$color-grey-scale: #bebebe;
+$color-grey-scale-medium: rgb(95, 95, 95);
+$color-grey-scale-dark: #333;
+
+
+$color-white: rgb(255, 255, 255);
+$color-black: #000;
+
+
+// GRID
+$grid-width: 120rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px / 16px = 75em
+$bp-large: 62.5em; // 1000px / 16px = 62.5em
+$bp-medium: 50em; // 800px / 16px = 50em
+$bp-small: 37.5em; // 600px / 16px = 37.5em
+
+// FONT VARIABLES
+@import url("https://use.typekit.net/dim8hqt.css");
+$font-primary: "neue-haas-unica", sans-serif;
+// $font-display: "Josefin Sans", sans-serif;
+
+$xxxl-text-desktop: 3.981rem;
+$xxxl-text-tablet: 2.883rem;
+$xxxl-text-mobile: 2.883rem;
+
+$xxl-text-desktop: 3.318rem;
+$xxl-text-tablet: 3rem;
+$xxl-text-mobile: 3rem;
+
+$xl-text-desktop: 2.92rem;
+$xl-text-tablet: 2.278rem;
+$xl-text-mobile: 2.278rem;
+
+$large-text-desktop: 2.765rem;
+$large-text-tablet: 2.025rem;
+$large-text-mobile: 2.025rem;
+
+$medium-text-desktop: 2.2rem;
+$medium-text-tablet: 1.8rem;
+$medium-text-mobile: 1.8rem;
+
+// Absolute minimum for 16 px size body text 
+$regular-text-desktop: 1.75rem;
+$regular-text-tablet: 1.75rem;
+$regular-text-mobile: 1.75rem;
+
+$small-text-desktop: 1.6rem;
+$small-text-tablet: 1.333rem;
+$small-text-mobile: 1.333rem;

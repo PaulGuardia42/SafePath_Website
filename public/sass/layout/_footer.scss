@@ -1,0 +1,168 @@
+.footer{
+    width: 100vw;
+    background-color: $color-primary-dark;
+    padding: 8rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @include respond(phone) {
+        padding: 4rem 2rem;
+    }
+
+    &__top-row{
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    
+        @include respond(phone) {
+            flex-direction: column;
+        }
+
+        @include respond(phone) {
+            align-items: center;
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+        
+        &--col{
+            height: 100%;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1;
+            margin-right: 3rem;
+        
+            &:last-child{
+                margin-right: 0;
+            }
+        
+            @include respond(phone) {
+                margin-right: 0;
+            }
+        }
+    
+    }
+
+    &__link-list{
+        flex: 1 1 70%;
+        margin-right: auto;
+
+        & li {
+            margin-bottom: 1.5rem;
+                 
+        }
+
+        & a {
+            text-decoration: none;
+
+            &:hover{
+                color: rgb(189, 189, 189);
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__statement{
+        margin-left: 25%;
+        flex: 1 1 30%;
+        text-align: right;
+
+        
+        @include respond(phone) {
+            align-items: center;
+            text-align: center;
+            margin-left: 0%;
+            margin-bottom: 5rem;
+            width: 90%;
+        }
+        
+        & span {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+
+    &__white-line-row{
+        width: 100%;
+    }
+
+    &__bottom-row{
+        display: flex;
+        margin-top: 3rem;
+
+        @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & .social-col{
+            display: flex;
+            flex-direction: row;
+            flex: 1 1;
+        }
+        
+        & .social-wrapper > a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 1rem;
+            text-decoration: none;
+
+            &:hover{
+                font-weight: 500;
+
+            }
+            
+            img {
+                width: 50px;
+                height: auto;
+
+            }
+
+            & span {
+                padding-top: 0.5rem;
+
+            }
+        }
+        
+        & .contact-col{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex: 1 1;
+
+            @include respond(phone){
+                margin-top: 1rem;
+                align-items: center;
+            }
+    
+
+            & a {
+                color: white;
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-top: 1rem;
+                letter-spacing: 0.75px;
+                text-decoration: none;
+
+                &:hover{
+                    color: rgb(189, 189, 189);
+                    font-weight: 500;
+                }
+            }
+            
+            & .copyright{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+}

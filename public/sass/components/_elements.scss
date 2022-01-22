@@ -1,0 +1,15 @@
+.line {
+    height: 2px;
+    width: 100%;
+    
+    &__white{
+        background-color: white;
+    }
+
+    &__blue{
+        background-color: $color-primary-medium;
+    }
+    &__dark-blue{
+        background-color: $color-primary-dark;
+    }
+}

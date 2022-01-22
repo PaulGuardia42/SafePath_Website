@@ -1,0 +1,244 @@
+.basic-container{
+    margin: 5rem;
+    padding: 2rem;
+    background-color: lightgray;
+    border: 1px solid black;
+    word-break: break-all;
+
+}
+
+
+.typography-field{
+
+    &__text{
+        padding-bottom: 1rem;
+    }
+
+}
+
+.test-colors{
+    &__container{
+
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        & h2{
+            margin: 0 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid black;
+        }
+        
+        &--wrapper{
+            display: flex;
+            margin: 1rem;
+        }
+    }
+
+    &__color-info{
+        display: flex;
+        flex: 1 1;
+        height: 300px;
+        flex-direction: column;
+        padding-right: 2rem;
+        
+        &:last-child{
+            padding-right: 0;
+        }
+
+        & p {
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+    
+    &__box{
+        width: auto;
+        height: auto;
+        flex: 1 1;
+        
+        // PRIMARY COLOR
+        &--color-primary-light{
+            background-color: $color-primary-light;
+        }
+        
+        &--color-primary{
+            background-color: $color-primary;
+        }
+        
+        &--color-primary-medium{
+            background-color: $color-primary-medium;
+        }
+        
+        &--color-primary-dark{
+            background-color: $color-primary-dark;
+        }
+
+        // SECONDARY COLOR
+        &--color-secondary-light{
+            background-color: $color-secondary-light;
+        }
+        
+        &--color-secondary{
+            background-color: $color-secondary;
+        }
+        
+        &--color-secondary-medium{
+            background-color: $color-secondary-medium;
+        }
+        
+        &--color-secondary-dark{
+            background-color: $color-secondary-dark;
+        }
+
+        // TERTIARY COLOR
+        &--color-tertiary-light{
+            background-color: $color-tertiary-light;
+        }
+        
+        &--color-tertiary{
+            background-color: $color-tertiary;
+        }
+        
+        &--color-tertiary-medium{
+            background-color: $color-tertiary-medium;
+        }
+        
+        &--color-tertiary-dark{
+            background-color: $color-tertiary-dark;
+        }
+
+        // GREY SCALE COLOR
+        &--color-grey-scale-light{
+            background-color: $color-grey-scale-light;
+        }
+        
+        &--color-grey-scale{
+            background-color: $color-grey-scale;
+        }
+        
+        &--color-grey-scale-medium{
+            background-color: $color-grey-scale-medium;
+        }
+        
+        &--color-grey-scale-dark{
+            background-color: $color-grey-scale-dark;
+        }
+    }
+}
+
+
+
+.image-testing{
+    height: 100vh;
+    margin: 5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    // I want to create a mixin that you can:
+    // 1) enter in the specified image-frame size eg: 400px W X 1000px H --OR-- use %'s
+    // 2) declare how big you want the image to be so you can zoom in or move back
+    // 3) be able to move the x and y positions of the image so it can placed where the programmer wants it to be within the image frame
+    
+    // defining the mixin here
+    @mixin image-container($frame-width, $frame-height, $image-size, $image-x-position, $image-y-position){
+        
+        
+        
+    };
+    
+    // calling the mixin within the image-testing container
+    // @include image-container(400px, 400px, 150%, -10%, 0%){};
+    
+    
+    & .image-frame{
+        // the image frame is what crops the image using overflow hidden
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: rgba(255, 0, 0, 0.165);
+        border: 1px solid red;
+
+        // We are setting the image frame height and width, anything outside of this will be clipped by overflow:hidden
+        // $frame-width, $frame-height
+        height: 400px;
+        width: 400px;
+
+        position: relative;
+
+    }
+
+    & .image-pen{
+        // the image pen is the space where the image can move in
+        background-color: rgba(4, 0, 255, 0.193);
+        border: 1px solid blue;
+
+        // We need to make the image bigger than the image frame in order to crop it properly and not show the red background color
+        height: 150%;
+        width: 150%;
+
+        // here we are transforming the position of the image to the center of the image frame
+        position: absolute;
+        top: -25%;
+        left: -25%;
+        
+        // Now that the image-pen is centered on the image frame we need to center the img on the image pen with flexbox
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    & img{
+        // the image itself
+        background-color: rgba(0, 209, 70, 0.193);
+        border: 1px solid green;
+
+
+        // $image-x-position, $image-y-position
+        transform: translate(-10%,0%);
+
+        // keep the image at 100% so it wont be skewed or warped
+        // $image-size
+        width: 150%;
+    }
+
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+
+   &__wrapper{
+       border: 1px solid black;
+       padding: 2rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        flex: 1 1 25%;
+
+       & label{
+           padding-right: 1rem;
+       }
+   }
+}
+
+.grid-field{
+    height: 60vh;
+
+    &__row{
+        margin: 2rem;
+    }
+
+    &__col{}
+}
+
+.forms{}
+
+.components{}
